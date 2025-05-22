@@ -1,0 +1,132 @@
+\documentclass[12pt,a4paper]{report}
+\setlength{\headheight}{15.35403pt}
+\addtolength{\topmargin}{-3.35403pt}
+
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\setlength{\parindent}{1em}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{background}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[acronym,toc]{glossaries}
+\usepackage{array}
+\usepackage{float}
+\usepackage{microtype}
+
+% Definindo as siglas:
+\newacronym{tap}{TAP}{Termo de Abertura do Projeto}
+\newacronym{gpf}{GPF}{Gestão de Projetos em Fundações}
+\newacronym{fundep}{Fundep}{Fundação de Desenvolvimento da Pesquisa}
+\newacronym{fiotec}{Fiotec}{Fundação para o Desenvolvimento Científico e Tecnológico em Saúde}
+\newacronym{ufmg}{UFMG}{Universidade Federal de Minas Gerais}
+\newacronym{fiocruz}{Fiocruz}{Fundação Oswaldo Cruz}
+\newacronym{rabbitmq}{RabbitMQ}{software de mensageria}
+\newacronym{cia}{CIA}{Centro Integrado de Atendimento}
+\newacronym{bhs}{BHS}{empresa terceirizada para contratação de pessoal}
+
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=1,
+  angle=0,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/Timbrado.jpg}}
+}
+
+\title{Proposta Comercial para o Período de 90 (noventa) dias}
+\author{
+  Elaborado por: André Vinícius de Oliveira\\
+  Aprovado por: Carlos Henrique de Morais Bomfim\\
+  Aprovado por: Walmir Matos Caminhas
+}
+\date{21/05/2025}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{Página \thepage\ de \pageref{LastPage}}
+\fancyhead[L]{\leftmark}
+
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
+\begin{document}
+
+\chapter*{Anexo I – Proposta Comercial para o Período de 90 (noventa) dias}
+\addcontentsline{toc}{chapter}{Anexo I – Proposta Comercial para o Período de 90 (noventa) dias}
+
+\section*{1. Objetivo}
+
+Este anexo apresenta a estimativa de custos para a fase inicial do projeto, correspondente a 90 (noventa) dias de execução do pré-projeto do \gls{gpf}. Para efeito de estimativa, consideramos início em 02 de junho de 2025. Esses valores podem variar proporcionalmente caso a data de início seja diferente, uma vez que a cobrança de terceiros é feita por hora trabalhada.
+
+\section*{2. Disposições Gerais}
+
+Os cargos previstos nesta fase poderão ser ocupados por profissionais das fundações \gls{fundep} e \gls{fiotec} ou, conforme necessidade e disponibilidade interna, por meio da contratação de terceiros. Os valores aqui apresentados servem como base de planejamento e poderão variar de acordo com as condições específicas de contratação, observando os intervalos informados.
+
+As cargas horárias foram calculadas com base nos \textbf{64 dias úteis} correspondentes ao período de \textbf{02 de junho de 2025 a 29 de agosto de 2025}, segundo o calendário de \textbf{Belo Horizonte (MG)}, considerando a semana de \textbf{segunda à sexta}, descontando os feriados de 19/06 (Corpus Christi – ponto facultativo) e 15/08 (Assunção de Nossa Senhora).
+
+\section*{3. Estimativa de Custos por Cargo}
+
+\begin{table}[H]
+    \centering
+    \small
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{@{}llrrrr@{}}
+            \toprule
+            \textbf{Cargo} & \textbf{Qtde} & \textbf{Horas} & \textbf{Valor Hora (R\$)} & \textbf{Custo Mínimo (R\$)} & \textbf{Custo Máximo (R\$)} \\
+            \midrule
+            Coordenador de Projeto & 1 & 512 & 89 -- 182 & 45.568,00 & 93.184,00 \\
+            Subcoordenadores de Projeto & 2 & 512 & 89 -- 182 & 91.136,00 & 186.368,00 \\
+            Consultor Técnico Sênior & 1 & 48 & 400 & 19.200,00 & 19.200,00 \\
+            Product Owner / Analista de Negócio & 7 & 512 & 112 -- 168 & 400.384,00 & 600.576,00 \\
+            UX/UI Designer & 1 & 256 & 57 -- 135 & 14.592,00 & 34.560,00 \\
+            Arquiteto de Software & 2 & 256 & 135 -- 200 & 69.120,00 & 102.400,00 \\
+            Documentador & 1 & 512 & 75 -- 178 & 38.400,00 & 91.136,00 \\
+            Representantes do Negócio & 30 & 256 & — & — & — \\
+            \bottomrule
+        \end{tabular}
+    }
+    \caption{Estimativa de Custo por Cargo}
+    \label{tab:estimado-por-cargo}
+\end{table}
+
+\section*{4. Totais Estimados}
+
+A Tabela \ref{tab:totais-estimados} apresenta o custo total estimado para os 90 dias de pré-projeto, considerando que todos os profissionais listados serão contratados como terceiros (100\% contratação terceirizada). Esses valores contemplam apenas o custo direto com as horas de trabalho e não incluem encargos adicionais (administrativos, tributos, gestão de contrato, etc.), que deverão ser negociados separadamente entre as fundações.
+
+\begin{table}[H]
+    \centering
+    \small
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{@{}p{6.5cm}cc@{}}
+            \toprule
+            \textbf{Tipo de Custo} & \textbf{Valor Total Mínimo (R\$)} & \textbf{Valor Total Máximo (R\$)} \\
+            \midrule
+            Custo Estimado & \textbf{678.400,00} & \textbf{1.127.424,00} \\
+            \bottomrule
+        \end{tabular}
+    }
+    \caption{Totais estimados de custo considerando 100\% de contratação terceirizada.}
+    \label{tab:totais-estimados}
+\end{table}
+
+\section*{5. Observações}
+
+\begin{itemize}
+    \item A composição final das equipes será definida em comum acordo entre as fundações, podendo sofrer ajustes ao longo da execução.
+    \item Os representantes do negócio são colaboradores internos das fundações e não gerarão custos diretos nesta etapa.
+\end{itemize}
+
+
+\end{document}

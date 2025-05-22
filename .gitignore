@@ -1,0 +1,38 @@
+# Arquivos de log e temporários do LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.ilg
+*.idx
+*.ind
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.bbl
+*.blg
+*.glo
+*.ist
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.glsdefs
+*.dvi
+
+# (Opcional) Se não quiser versionar PDFs gerados:
+*.pdf
+
+# (Opcional) Se houver pastas de build temporárias:
+build/
+out/
+_temp/
